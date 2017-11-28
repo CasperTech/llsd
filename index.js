@@ -160,7 +160,7 @@ module.exports = (function()
     //
     // *TODO: Track updates to CommonJS proposals for Binary data API
     //
-    (function ()
+    const Binary = (function ()
     {
 
         // Convert binary string (each octet stored as character 0x00-0xff) to array of numbers
@@ -472,7 +472,7 @@ module.exports = (function()
         {
             return this.octets.slice(); // Make a copy
         };
-
+        return Binary;
     }());
 
     //
