@@ -1337,7 +1337,7 @@ module.exports = (function()
             case 'string':
                 return value;
             case 'boolean':
-                return value ? 'true' : '';
+                return value ? '1' : '0';
             case 'integer':
                 return String(value);
             case 'real':
