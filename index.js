@@ -1029,12 +1029,11 @@ module.exports = (function()
         }
 
         value = readValue();
-        if (!eod())
-        {
-            throw new Error("Unexpected continuation of binary data");
-        }
 
-        return value;
+        return {
+            result: value,
+            position: offset
+        };
     };
 
     LLSD.formatBinary = function (data)
