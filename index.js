@@ -25,7 +25,7 @@ $/LicenseInfo$
 
 "use strict";
 
-const DOMParser = require('xmldom').DOMParser;
+const { DOMParser } = require('@xmldom/xmldom')
 const atob = require('abab').atob;
 const btoa = require('abab').btoa;
 
